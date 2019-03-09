@@ -1,0 +1,35 @@
+<div class="row">
+  <!--Imagem do post-->
+  <div class="col-lg-4 mb-3">
+    <div class="overlay hm-white-light z-depth-1-half">
+      <a href="#">
+        <img src="https://statig1.akamaized.net/bancodeimagens/8y/fy/5m/8yfy5m6q3hoq0jror74husliw.jpg" class="img-fluid"
+          alt="" title="">
+      </a>
+      <div class="mask waves-effect waves-light"></div>
+    </div>
+  </div>
+  <!--/.Imagem do post-->
+
+  <!--Resumo-->
+  <div class="col-lg-8">
+    <a href="#">
+      <h3 class="h3 h3-responsive black-text font1">
+        {{new.title.rendered}}
+      </h3>
+    </a>
+    <span class="grey-text">
+      <span class="far fa-calendar-alt"></span>
+      {{new.date | date:'M/d/yy'}}
+
+      <span class="far fa-clock"></span>
+      {{new.date | date:'hh:mm'}}
+
+    </span>
+    <p [innerHTML]="new.excerpt.rendered">
+    </p>
+    <a href="#" class="btn text-white btn-sm waves-effect waves-light bg-dark">Ver noticia completa</a>
+  </div>
+  <!--/.Resumo-->
+</div>
+<hr class="extra-margins">
